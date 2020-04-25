@@ -22,6 +22,8 @@ public class KafkaProducerTest {
 
     @Test
     public void testSend() {
-        sender.send("topic01", "lisz", "李书征");
+        for (int i = 0; i < 3; i++) {
+            sender.send("topic01", "lisz", "lisz1012");
+        }
     }
 }
